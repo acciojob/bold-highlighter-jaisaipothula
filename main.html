@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Get And Style All Tags</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Highlighter</title>
+    <style>
+        .highlight {
+            color: green; /* Highlight color */
+        }
+    </style>
 </head>
-
 <body>
-  	<p>[<a href="#" onMouseOver="highlight()" onMouseOut="return_normal()">On mouse over here bold words of the following paragraph will be highlighted</a>]</p> 
-	<p><strong>AccioJob</strong> is an <strong>ed-tech startup</strong> run by IIT Delhi Alumni that provides a comprehensive state-of-the-art learning platform for <strong>Full Stack Web Development</strong>. Our industry-relevant curriculum is taught by top tech instructors and mentors, and our students have gone on to work at leading tech companies like <strong>Amazon</strong>, <strong>Salesforce</strong>, and <strong>Walmart</strong>, among others. With job placement opportunities at <strong>300+</strong> top tech partner companies, we have placed <strong>1000+</strong> students in 2022 itself at an average salary of <strong>8.3 LPA</strong></p>
 
-    <script type="text/javascript" src="./script.js">
-</script>
+    <p>
+        This is a sample paragraph with some <strong>bold</strong> words. 
+        You can hover over the link below to highlight all <strong>bold</strong> words in this paragraph.
+    </p>
 
+    <a href="#" id="highlightLink">Hover over me to highlight bold words</a>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
-
 </html>
